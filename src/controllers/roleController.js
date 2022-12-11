@@ -2,7 +2,6 @@ import RoleRepository from "../repositories/Roles.repository.js";
 const roleRepository = new RoleRepository();
 
 const addRole = async (req, res) => {
-    
     try {
         const newRole = await roleRepository.createRole(req.body)
         res.status(200).json(newRole);
