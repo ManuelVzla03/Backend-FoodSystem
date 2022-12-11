@@ -3,7 +3,7 @@ import { config } from "dotenv";
 config({ path: ".env" });
 
 const database = process.env.DATABASE;
-const username = process.env.USER;
+const username = process.env.DB_USER;
 const password = process.env.PASSWORD;
 const host = process.env.HOST;
 const dialect = process.env.DIALECT;
